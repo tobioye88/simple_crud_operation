@@ -26,7 +26,7 @@ export class UserService {
     return this.userRepository.save(user);
   }
 
-  async git(id: number, user: User) {
+  async updateUser(id: number, user: User) {
     return await this.userRepository.update(id, user);
   }
 

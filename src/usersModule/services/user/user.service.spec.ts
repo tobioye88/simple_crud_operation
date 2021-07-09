@@ -35,7 +35,7 @@ describe('UserService', () => {
     deleteUser: (id: number) => {
       resultAll = resultAll.filter((user) => user.id !== id);
     },
-    updateUser: (user: User) => {
+    updateUser: (id: number, user: User) => {
       resultAll = resultAll.map((mUser) => {
         if (mUser.id === user.id) {
           user.id = mUser.id;
